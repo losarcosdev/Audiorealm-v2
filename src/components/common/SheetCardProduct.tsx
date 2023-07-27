@@ -14,8 +14,6 @@ export const SheetCardProduct = ({ product }: Props) => {
   const { removeProductFromCart, updateProductQuantityInCart } =
     useContext(CartContext);
 
-  console.log(product);
-
   const handleQuantity = (quantity: number, product: ICartProduct) => {
     if (
       quantity + product.quantity < 1 ||

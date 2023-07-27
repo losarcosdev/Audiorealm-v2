@@ -1,16 +1,9 @@
-import {
-  Skeleton,
-  Icons,
-  Shell,
-  Card,
-  CardContent,
-  CardHeader,
-} from "@/components";
+import { Skeleton, Icons, Shell } from "@/components";
 
 const ProductLoading = () => {
   return (
     <Shell className="container p-10">
-      <div className="flex items-center justify-between gap-10">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-10">
         <Skeleton className="h-[450px] w-full rounded-sm">
           <div className="flex h-full items-center justify-center bg-secondary">
             <Icons.placeholder

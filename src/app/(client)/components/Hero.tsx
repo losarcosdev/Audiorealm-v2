@@ -1,9 +1,10 @@
-import { Button } from "@/components";
+import { buttonVariants } from "@/components";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
-    <section className="md:h-screen h-[80vh] w-full flex items-center justify-around gradient-bg">
+    <section className="h-screen w-full flex items-center justify-around gradient-bg">
       {/* Hero Section */}
       <div className="flex gap-4 flex-col p-3">
         <h1 className="md:hidden flex text-center text-white font-semibold text-5xl">
@@ -17,12 +18,16 @@ export const Hero = () => {
           Experience natural, lifelike audio and exceptional <br /> build
           quality made for the passionate music <br /> enthusiast.
         </p>
-        <Button
-          variant={"custom"}
-          className="w-full border-[1px] border-teal-700 text-teal-700 hover:opacity-75"
+        <Link
+          href={"/edifier_w820nb"}
+          className={buttonVariants({
+            variant: "custom",
+            className:
+              "w-full border-[1px] border-teal-700 text-teal-700 hover:opacity-75",
+          })}
         >
           SEE PRODUCT
-        </Button>
+        </Link>
       </div>
       <div className="hidden lg:flex">
         <Image

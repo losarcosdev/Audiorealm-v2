@@ -29,7 +29,7 @@ export const SheetCartSummary = ({ cart }: Props) => {
   });
 
   return (
-    <div className="flex flex-col gap-1 text-sm pb-5">
+    <div className="flex flex-col gap-1 text-sm pb-14 md:pb-5">
       <Separator className="mb-2 bg-zinc-600" />
 
       <div className="flex">
