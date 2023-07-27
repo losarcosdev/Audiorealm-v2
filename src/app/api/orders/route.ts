@@ -40,6 +40,8 @@ export const POST = async (request: Request) => {
         (dbProduct) => dbProduct.id === product._id
       )?.price;
 
+      console.log({ dbProductPrice, frontendProductPrice: product.price });
+
       if (dbProductPrice !== product.price) {
         return NextResponse.json(
           {
@@ -54,6 +56,8 @@ export const POST = async (request: Request) => {
 
     const taxRate = Number(process.env.NEXT_PUBLIC_TAXT_RATE);
     const totalBackend = +Number(subtotal * (taxRate + 1)).toFixed(2);
+
+    console.log({ totalBackend, totalFrontend: productOrder.total });
 
     if (productOrder.total !== totalBackend) {
       return NextResponse.json(
