@@ -35,7 +35,7 @@ export const Hero = () => {
           src={"/hero-headphone.png"}
           width={200}
           height={400}
-          className="w-[550px] h-[500px]"
+          className="w-[550px] h-[499px]"
         />
       </div>
     </section>

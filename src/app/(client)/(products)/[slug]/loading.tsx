@@ -2,7 +2,7 @@ import { Skeleton, Icons, Shell } from "@/components";
 
 const ProductLoading = () => {
   return (
-    <Shell className="container p-10">
+    <Shell className="container p-9">
       <div className="flex flex-col md:flex-row items-center justify-between gap-10">
         <Skeleton className="h-[450px] w-full rounded-sm">
           <div className="flex h-full items-center justify-center bg-secondary">
