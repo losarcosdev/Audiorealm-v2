@@ -1,7 +1,7 @@
 import { db } from "@/database";
 import Product from "@/models/Product";
 import { ProductList } from "../(products)/components";
-import { IProduct, ProductResponse } from "@/interfaces";
+import { ProductResponse } from "@/interfaces";
 
 export const Featured = async () => {
   await db.connect();
@@ -16,8 +16,8 @@ export const Featured = async () => {
   await db.disconnect();
 
   return (
-    <section className="container max-w-7xl lg:h-screen">
-      <h1 className="text-3xl lg:text-4xl font-semibold tracking-tighter text-center lg:text-left">
+    <section className="md:px-12 max-w-7xl lg:h-screen md:mx-auto">
+      <h1 className="md:px-10 text-3xl lg:text-4xl font-semibold tracking-tighter text-center lg:text-left">
         FEATURED PRODUCTS
       </h1>
       <ProductList products={products} />

@@ -23,7 +23,8 @@ export const ProductCard = ({ product }: Props) => {
       href={product.slug}
       className={`flex flex-col items-center gap-2 border-[1.5px]
        border-zinc-100 hover:border-[1.5px] hover:border-zinc-900
-       active:scale-95 active:border-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:ring-offset-2 duration-200 mb-4
+       active:scale-95 active:border-zinc-100 focus:outline-none focus:ring-2 
+       focus:ring-zinc-900 focus:ring-offset-2 duration-200 mb-4 w-full
        `}
       key={product.slug}
     >

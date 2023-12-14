@@ -4,7 +4,7 @@ import React from "react";
 export const About = () => {
   return (
     <section className="md:h-screen py-12 md:py-0 flex flex-col-reverse md:flex-row items-center justify-evenly">
-      <div className="flex flex-col gap-3 max-w-lg p-1">
+      <div className="flex flex-col gap-3 max-w-lg p-1 pt-10 md:pt-0">
         <h3 className="text-black text-3xl md:text-5xl tracking-tighter font-semibold text-left md:leading-[4rem]">
           BRINGING YOU THE <span className="text-teal-700">BEST </span>
           AUDIO GEAR
@@ -21,9 +21,9 @@ export const About = () => {
       <Image
         src={"/model-headphone.jpg"}
         alt="Man showcasing headphones"
-        width={800}
-        height={800}
-        className="w-[600px] h-[400px] md:h-screen"
+        width={400}
+        height={400}
+        className="object-contain"
       />
     </section>
   );

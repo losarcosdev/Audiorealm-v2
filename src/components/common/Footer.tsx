@@ -49,7 +49,7 @@ export const Footer = () => {
       </footer>
 
       {/* //!Mobile version */}
-      <footer className="flex flex-col lg:hidden bg-zinc-950 mt-8 items-center justify-center p-5 gap-3">
+      <footer className="flex flex-col lg:hidden bg-zinc-950 mt-4 items-center justify-center p-5 gap-3">
         <h4 className="font-bold text-3xl text-white">AudioRealm</h4>
         <div className="flex flex-col gap-4 text-center">
           {links.map(({ name, route }) => (
